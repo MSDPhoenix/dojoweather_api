@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" type="text/css" href="dojoweather.css">
+    <link rel="stylesheet" href="">
+    <link rel="icon" type="image/x-icon" href="images/banana.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"></head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="#">Architecto</a> Architecto quaerat vitae neque, dolorem quae inventore perferendis odit aliquam eius esse, assumenda veniam similique exercitationem molestias sapiente odio! Numquam quas debitis magni <span class="pink">blanditiis</span>  quidem, iste illum officiis placeat eos dicta aliquid reprehenderit eum expedita tenetur, eercitationem minima nulla iusto maiores voluptatibus!</p>
+    <div id="cookie_div">
+        <img src="images/cookie.png" alt="cookie">
+        <span>
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly, not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </span>
+        <button onclick="remove_cookie_div()">I Accept</button>
+    </div>
+    <div id="header">
+        <h1>DojoWeather</h1>
+        <span>
+            <!-- <h3 onclick="alert('Loading weather report for Burbank')">Burbank</h3>
+            <h3 onclick="alert('Loading weather report for Chicago')">Chicago</h3>
+            <h3 onclick="alert('Loading weather report for Dallas')">Dallas</h3> -->
+            <h3 onclick="get_city('Burbank')">Burbank</h3>
+            <h3 onclick="get_city('Chicago')">Chicago</h3>
+            <h3 onclick="get_city('Dallas')">Dallas</h3>
+        </span>
+    </div>
+    <div id="container">
+        <div id="title">
+            <h2>San Jose</h2>
+            <span>
+                <span>show temperature in </span>
+                <select id="selected" onchange="convert_temperature(this)">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </span>
+        </div>
+        <div id="content">
+            <div class="day">
+                <h3>Today</h3>
+                <img src="images/some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <h3>
+                    <span class="red temps">24°</span>
+                    <span class="blue temps">18°</span>
+                </h3>
+            </div>
+            <div class="day">
+                <h3>Tomorrow</h3>
+                <img src="images/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <h3>
+                    <span class="red temps">27°</span>
+                    <span class="blue temps">19°</span>                   
+                </h3>
+            </div>
+            <div class="day">
+                <h3>Friday</h3>
+                <img src="images/some_clouds.png" alt="some clouds">
+                <p>some clouds</p>
+                <h3>
+                    <span class="red temps">21°</span>
+                    <span class="blue temps">16°</span>                    
+                </h3>
+            </div>
+            <div class="day">
+                <h3>Saturday</h3>
+                <img src="images/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <h3>
+                    <span class="red temps">26°</span>
+                    <span class="blue temps">21°</span>                    
+                </h3>
+            </div>
+        </div>
+    </div>
+    <script src="dojoweather.js"></script>
+</body>
+</html>
+

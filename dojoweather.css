@@ -1,0 +1,119 @@
+* {
+    margin:0px;
+    border:0PX;
+    padding:0px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 1.8vw;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0vw 12vw;
+    height:8.4vw;
+    background-color: #A0C5F8;
+    color:white;
+}
+h1 {
+    font-size: 4.3vw;
+}
+#header span {
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    width:36vw;
+}
+h3, h3 span {
+    font-size: 2.4vw;
+    width:100%;
+    text-align:center;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+#container {
+    margin:0vw 12vw;
+}
+#title {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    height:8.4vw;
+    border-bottom:2px solid black;
+    margin-bottom:2.4vw;
+}
+h2 {
+    font-size: 3.2vw;
+}
+select {
+    border:2px black solid;
+    height:3.8vw;
+    margin-left:1vw;
+}
+option {
+    /* border:2px black solid; */
+}
+#title span {
+    display:flex;
+    align-items:center;
+}
+#content {
+    display:flex;
+    justify-content: space-between;
+}
+.day {
+    background-color:#EEEEEE;
+    width: 22%;
+    height: 32vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+img {
+    width:75%;
+    border-radius:50%;
+}
+.red {
+    color:#CF2B27;
+}
+.blue {
+    color:#2A78E4;
+}
+/* COOKIE DIV */
+#cookie_div {
+    margin: 1vw 12vw;
+    display:flex;
+    justify-content:left;
+    align-items: center;
+    border:2px solid black;
+    background-color:#EEEEEE;
+    position:fixed;
+    top:51vw;
+    width:76%;
+}
+#cookie_div img {
+    height:7vw;
+    width:7vw;
+    margin:2.5vw;
+}
+#cookie_div span {
+    display:inline-block;
+    width:50vw;
+}
+#cookie_div h3 {
+    width:max-content;
+    padding:.5vw 0vw;
+}
+#cookie_div button {
+    background-color: #A0C5F8;
+    padding:.5vw 1vw;
+    border:2px solid black;
+    box-shadow: 5px 5px  black;
+    margin: auto;
+}
+.pink {
+    color:pink;
+}
